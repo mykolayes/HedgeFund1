@@ -1,0 +1,81 @@
+.HedgeFundContainer {
+    text-align: center;
+}
+
+/*.HedgeFundContainer-logo {*/
+    /*animation: App-logo-spin infinite 20s linear;*/
+    /*height: 40vmin;*/
+/*}*/
+
+.HedgeFundContainer-header {
+    background-color: #282c34;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.HedgeFundContainer-intro{
+    font-size: 20px;
+}
+
+.HedgeFundContainer-exchRates{
+    text-align: center;
+}
+
+.HedgeFundContainer-link {
+    color: #61dafb;
+}
+
+body {
+    background: #f1f1f1;
+    padding:50px;
+}
+
+.Crypto-container {
+    background:white;
+    width: 70%;
+    margin: 0 auto 4px auto;
+    padding: 1em;
+    box-shadow: 1px 1px 0 lightgrey;
+    /*text-align: left;*/
+    /*display: inline-block;*/
+}
+
+span.left {
+    font-weight: bold;
+    /*text-align: center;*/
+    /*float: right;*/
+}
+
+span.right {
+    /*float:right;*/
+    margin-left: 20px;
+}
+
+.IFrameContainer {
+    text-align: center;
+    /*margin-left: 200px;*/
+}
+
+.IFrameContainerInner {
+
+}
+
+.Header {
+    height: 125px;
+    line-height: 125px;
+    width: 250px;
+    border:1px solid black;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 45px;
+}
+
+.Footer {
+    text-align: center;
+    margin-top: 20px;
+}
