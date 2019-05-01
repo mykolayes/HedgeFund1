@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 
 import axios from 'axios';
 
-import * as api from '../api';
-
 import '../App.css';
 
 import ChartWidget from '../investing_com_chart_widget/ChartWidget';
+// import TVChartContainer from  '../TVChartContainer/TVChartContainer';
+// import Chart from '../chart_container/Chart';
 
 var NumberFormat = require('react-number-format');
 
@@ -46,7 +46,7 @@ class HedgeFundContainer extends Component {
         // var ps = currencyx.toString();
             Object.keys(this.state.cryptos).map((key) => (
                 avg += parseFloat(this.state.cryptos[key].USD)
-                ,                    console.log(this.state.cryptos[key].USD)
+                // ,                    console.log(this.state.cryptos[key].USD)
             ))
         avg /= Object.keys(this.state.cryptos).length;
         return avg;
@@ -95,10 +95,14 @@ class HedgeFundContainer extends Component {
                         </div>
                     ))}
                 </div>
-                <br/>
-                <div>
-                    <ChartWidget />
-                </div>
+                {/*<br/>*/}
+                {/*<div>*/}
+                    {/*<ChartWidget />*/}
+                {/*</div>*/}
+                {/*<div>*/}
+                    {/*/!*<iframe height="480" width="650" src="https://ssltvc.forexprostools.com/?pair_ID=945629&height=480&width=650&interval=86400&plotStyle=candles&domain_ID=1&lang_ID=1&timezone_ID=16"></iframe>*/}
+                    {/*<iframe height="355" width="430" src="https://sslcharts.forexprostools.com/index.php?force_lang=1&pair_ID=1&timescale=300&candles=50&style=candles"></iframe>*/}
+                {/*</div>*/}
             </div>
         );
     }

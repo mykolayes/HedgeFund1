@@ -1,11 +1,8 @@
+/*HedgeFUndContainer*/
+
 .HedgeFundContainer {
     text-align: center;
 }
-
-/*.HedgeFundContainer-logo {*/
-    /*animation: App-logo-spin infinite 20s linear;*/
-    /*height: 40vmin;*/
-/*}*/
 
 .HedgeFundContainer-header {
     background-color: #282c34;
@@ -56,6 +53,8 @@ span.right {
     margin-left: 20px;
 }
 
+/*ChartWidget*/
+
 .IFrameContainer {
     text-align: center;
     /*margin-left: 200px;*/
@@ -64,6 +63,133 @@ span.right {
 .IFrameContainerInner {
 
 }
+
+/*Charts*/
+
+.Charts {
+    text-align: center;
+}
+
+.Charts-header {
+    background-color: #282c34;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.Charts-intro{
+    font-size: 20px;
+}
+
+.Charts-main{
+    font-size: 15px;
+}
+
+/*Team*/
+
+.Team {
+    text-align: center;
+}
+
+.Team-header {
+    background-color: #282c34;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.Team-intro{
+    font-size: 20px;
+}
+
+.Team-main{
+    font-size: 15px;
+}
+
+/*About*/
+
+.About {
+    text-align: center;
+}
+
+.About-header {
+    background-color: #282c34;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.About-intro{
+    font-size: 20px;
+}
+
+.About-main{
+    font-size: 15px;
+}
+
+/*MyAccount*/
+
+.MyAccount {
+    text-align: center;
+}
+
+.About-header {
+    background-color: #282c34;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.Account-balance{
+    font-size: 20px;
+}
+
+.Account-currency{
+    font-size: 15px;
+}
+
+/*OrdersCart*/
+
+.OrdersCart {
+    text-align: center;
+}
+
+.OrdersCart-header {
+    background-color: #282c34;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.OrdersCart-intro{
+    font-size: 20px;
+}
+
+.OrdersCart-main{
+    font-size: 15px;
+}
+
+/*Components*/
 
 .Header {
     height: 125px;
