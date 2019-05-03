@@ -72,7 +72,7 @@ class HedgeFundContainer extends Component {
         return (
             <div className="HedgeFundContainer">
                 <header className="HedgeFundContainer-header">
-                    <h1>Welcome to the Hedge Fund</h1>
+                    <h1>Welcome to the Index Fund</h1>
                 </header>
                 <p className="HedgeFundContainer-intro">
                     Exchange rates are listed below:

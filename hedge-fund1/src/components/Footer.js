@@ -5,7 +5,7 @@ class Footer extends Component {
     render() {
         return (
             <div className="Footer">
-                Hedge Fund Project
+                Index Fund Project
                 <br/>
                 NaUKMA 2019
                 <br/>

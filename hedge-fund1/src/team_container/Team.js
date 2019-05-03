@@ -15,7 +15,7 @@ class Team extends Component {
                 </p>
 
                 <p className="Team-main">
-                    C-level. CEO - Yevhen Nevmerzhytskyi, CTO - Kyrylo Semenovych
+                    C-level. CEO - Yevhen Nevmerzhytskyi, CTO - Kyrylo Horohovskyi
                 </p>
                 <p className="Team-main">
                     Developers, front-end: Andriy Gonchar, Andriy Nahnybida, Yeshchenko Mykola
