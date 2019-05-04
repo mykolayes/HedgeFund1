@@ -16,7 +16,7 @@ class NavbarGeneral extends Component {
                 <li><NavLink href={'/team'} className="nav-link">Team</NavLink></li>
                 <li><NavLink href={'/about'} className="nav-link">About</NavLink></li>
                 </ul>
-                <div class="pull-right">
+                <div className="pull-right">
                     <ul className="navbar-nav mr-auto">
                         <li><NavLink href="/register" className="nav-link">Register/Log in</NavLink></li>
                         <li><NavLink href={'/account'} className="nav-link">My account</NavLink></li>
