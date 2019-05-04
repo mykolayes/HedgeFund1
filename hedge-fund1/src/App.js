@@ -12,6 +12,8 @@ import Team from "./team_container/Team";
 import MyAccount from "./my_account/MyAccount";
 import Charts from "./charts/Charts";
 import OrdersCart from "./orders_cart/OrdersCart";
+import Login from "./login_form/login";
+import Registration from "./registration_form/registration";
 
 
 class App extends Component {
@@ -24,6 +26,8 @@ class App extends Component {
                     <Route path='/charts' component={Charts} />
                     <Route path='/team' component={Team} />
                     <Route path='/about' component={About} />
+                    <Route path='/login' component={Login} />
+                    <Route path='/register' component={Registration} />
                     <Route path='/account' component={MyAccount} />
                     <Route path='/orders' component={OrdersCart} />
                 </div>

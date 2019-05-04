@@ -1,4 +1,4 @@
-/*HedgeFUndContainer*/
+/*HedgeFundContainer*/
 
 .HedgeFundContainer {
     text-align: center;
@@ -186,6 +186,31 @@ span.right {
 }
 
 .OrdersCart-main{
+    font-size: 15px;
+}
+
+/*LoginForm*/
+
+.LoginForm {
+    text-align: center;
+}
+
+.LoginForm-header {
+    background-color: #282c34;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.LoginForm-intro{
+    font-size: 20px;
+}
+
+.LoginForm-main{
     font-size: 15px;
 }
 

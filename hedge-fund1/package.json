@@ -5,8 +5,10 @@
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.3.1",
-    "crypto-chart-react": "^0.2.3",
+    "jquery": "^3.4.1",
+    "passport-publickey": "^1.0.4",
     "react": "^16.8.2",
+    "react-bootstrap": "^1.0.0-beta.8",
     "react-dom": "^16.8.2",
     "react-iframe": "^1.4.0",
     "react-number-format": "^4.0.6",

@@ -18,7 +18,7 @@ class NavbarGeneral extends Component {
                 </ul>
                 <div className="pull-right">
                     <ul className="navbar-nav mr-auto">
-                        <li><NavLink href="/register" className="nav-link">Register/Log in</NavLink></li>
+                        <li><NavLink href={'/login'} className="nav-link">Register/Log in</NavLink></li>
                         <li><NavLink href={'/account'} className="nav-link">My account</NavLink></li>
                         <li><NavLink href={'/orders'} className="nav-link">Orders cart</NavLink></li>
                     </ul>

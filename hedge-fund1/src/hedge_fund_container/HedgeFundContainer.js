@@ -4,10 +4,6 @@ import axios from 'axios';
 
 import '../App.css';
 
-import ChartWidget from '../investing_com_chart_widget/ChartWidget';
-// import TVChartContainer from  '../TVChartContainer/TVChartContainer';
-// import Chart from '../chart_container/Chart';
-
 var NumberFormat = require('react-number-format');
 
 class HedgeFundContainer extends Component {
