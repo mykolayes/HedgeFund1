@@ -1,6 +1,5 @@
 var http = require('http'),
     path = require('path'),
-    methods = require('methods'),
     express = require('express'),
     bodyParser = require('body-parser'),
     session = require('express-session'),
@@ -36,8 +35,7 @@ if(isProduction){
 }
 
 require('./models/User');
-require('./models/Article');
-require('./models/Comment');
+require('./models/Transaction');
 require('./config/passport');
 
 app.use(require('./routes'));

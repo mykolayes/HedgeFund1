@@ -10,7 +10,7 @@ var UserSchema = new mongoose.Schema({
   first_name: {type: String},
   last_name: {type: String},
   image: String,
-  publickey: {type: String, unique: true},
+  publickey: {type: String},
   hash: String,
   salt: String
 }, {timestamps: true});
