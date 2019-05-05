@@ -60,12 +60,10 @@ class Sign extends Component {
   }
 
   render() {
-    const { 
-      user } = this.props.location.state;
+    // const { user } = this.props.location.state;
     const {
       signHash,
       signed } = this.state;
-    this.state.user = user;
     return (
       <div className="user-profile">
           {signed &&
