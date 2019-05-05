@@ -26,8 +26,9 @@ router.post('/sign', auth.required, function(req, res, next) {
   User.findById(req.payload.id).then(async function(user) {
     if (req.body.secretKey !== '' && user.publickey !== '') {
       const key = StellarSdk.Keypair.fromSecret(req.body.secretKey);
-      const sign = key.sign(Buffer(req.body.dataToSign));
-      if(key.verify(Buffer(req.body.dataToSign), sign)) {
+      const dt = req.body.dataToSign + new Date()
+      const sign = key.sign(Buffer(dt));
+      if(key.verify(Buffer(dt), sign)) {
         var transaction = new Transaction();
         transaction.userid = user._id;
         transaction.transactionSign = sign.toJSON().data;
