@@ -14,7 +14,8 @@ import Charts from "./charts/Charts";
 import OrdersCart from "./orders_cart/OrdersCart";
 import Login from "./login_form/login";
 import Registration from "./registration_form/registration";
-import UserProfile from './user_profile/Profile.js';
+import UserProfile from './profile/Profile';
+import Sign from './data_sign/Sign';
 
 
 class App extends Component {
@@ -31,7 +32,8 @@ class App extends Component {
                     <Route path='/register' component={Registration} />
                     <Route path='/account' component={MyAccount} />
                     <Route path='/orders' component={OrdersCart} />
-                    <Route path='/user/:uname' component={UserProfile} />
+                    <Route path='/profile' component={UserProfile} />
+                    <Route path='/sign' component={Sign} />
                 </div>
             </BrowserRouter>
         </Layout>

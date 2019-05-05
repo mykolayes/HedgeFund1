@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
+import { Alert, Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
 import axios from 'axios';
 
 import '../App.css';
 
-class Profile extends Component {
+class Sign extends Component {
 
   constructor(props) {
     super(props);
@@ -13,6 +13,8 @@ class Profile extends Component {
       user: {},
       privatekey: "",
       data: "",
+      signHash: "",
+      signed: false,
     };
   }
 
@@ -29,20 +31,54 @@ class Profile extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-
+    const accessString = localStorage.getItem('JWT');
+    const {
+      privatekey,
+      data
+    } = this.state;
+    if(privatekey.length !== '' && data !== '') {
+      axios.post('http://localhost:3001/api/keys/sign', {
+          secretKey: privatekey,
+          dataToSign: data
+        },
+        {
+          headers: { Authorization: `Bearer ${accessString}` },
+        },
+      ).then(response => {
+        this.setState({
+          signHash: response.data,
+          signed: true
+        });
+      }).catch((error) => {
+        console.log(error.response);
+        this.setState({
+          signHash: '',
+          signed: false
+        });
+      });
+    }
   }
 
   render() {
-    const { user } = this.props.location.state;
+    const { 
+      user } = this.props.location.state;
+    const {
+      signHash,
+      signed } = this.state;
     this.state.user = user;
     return (
       <div className="user-profile">
+          {signed &&
+            <Alert key='1' variant='success'>
+              The data has been validated and signed, here's the hash <b>{signHash}</b>
+            </Alert>
+          }
           <form onSubmit={this.handleSubmit}>
             <FormGroup controlId="data" bsSize="large">
                 <FormLabel>Data to sign</FormLabel>
                 <FormControl
                     autoFocus
-                    type="email"
+                    type="text"
                     value={this.state.data}
                     onChange={this.handleChange}
                 />
@@ -69,4 +105,4 @@ class Profile extends Component {
   }
 }
 
-export default Profile;
+export default Sign;

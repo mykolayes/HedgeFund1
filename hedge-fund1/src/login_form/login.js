@@ -119,7 +119,7 @@ class Login extends Component {
             );
         }
         return <Redirect to={{
-                pathname: `/user/${user.username}`,
+                pathname: `/profile`,
                 state: {user}
             }}
         />
