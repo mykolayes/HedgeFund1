@@ -31,9 +31,9 @@ router.post('/sign', auth.required, function(req, res, next) {
       if(key.verify(Buffer(dt), sign)) {
         var transaction = new Transaction();
         transaction.userid = user._id;
-        transaction.transactionSign = sign.toJSON().data;
+        transaction.transactionSign = sign.toString('base64');
         await transaction.save();
-        res.send(sign);
+        res.send(sign.toString('base64'));
       }
     } else {
       res.sendStatus(404);

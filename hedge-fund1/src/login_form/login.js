@@ -16,7 +16,6 @@ class Login extends Component {
             user: {},
             email: "",
             password: "",
-            verification: "",
             loggedIn: false,
             showError: false,
             showNullError: false,
@@ -24,7 +23,7 @@ class Login extends Component {
     }
 
     validateForm() {
-        return this.state.email.length > 0 && this.state.password.length > 0 && this.state.verification.length > 0;
+        return this.state.email.length > 0 && this.state.password.length > 0;
     }
 
     handleChange = event => {
@@ -70,7 +69,7 @@ class Login extends Component {
         }
     }
 
-    render() {
+    render() {  
         const {
             user,
             email,
@@ -99,14 +98,6 @@ class Login extends Component {
                             <FormLabel>Password</FormLabel>
                             <FormControl
                                 value={this.state.password}
-                                onChange={this.handleChange}
-                                type="password"
-                            />
-                        </FormGroup>
-                        <FormGroup controlId="verification" bsSize="large">
-                            <FormLabel>Verification number</FormLabel>
-                            <FormControl
-                                value={this.state.verification}
                                 onChange={this.handleChange}
                                 type="password"
                             />
