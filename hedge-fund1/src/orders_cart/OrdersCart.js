@@ -11,14 +11,13 @@ class OrdersCart extends Component {
                 <header className="OrdersCart-header">
                     <h1>Orders Cart</h1>
                 </header>
-                <p className="OrdersCart-intro">
-                    Invest fiat money
-                </p>
+                {/*<p className="OrdersCart-intro">*/}
+                    {/*/!*Invest fiat money*!/*/}
+                    {/*Trade*/}
+                {/*</p>*/}
 
-                (Algorobot should be placed somewhere here)
-
-                <div className="codegena_iframe">
-                    <iframe src="http://mses.kpi.ua/kursovi2/zinchenko.pdf" height="800" width="800"></iframe>
+                <div>
+                    <iframe src="http://localhost/newtrade.php" height="800" width="100%" frameBorder="0"></iframe>
                 </div>
 
             </div>

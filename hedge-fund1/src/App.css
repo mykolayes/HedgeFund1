@@ -214,6 +214,18 @@ span.right {
     font-size: 15px;
 }
 
+/*UserProfile*/
+
+.user-profile form{
+    margin: 0 auto;
+    max-width: 320px;
+}
+
+.get-key form{
+    margin: 0 auto;
+    max-width: 320px;
+}
+
 /*Components*/
 
 .Header {

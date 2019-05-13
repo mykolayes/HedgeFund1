@@ -37,7 +37,7 @@ class Team extends Component {
                     Developers, front-end: Andriy Gonchar, Andriy Nahnybida, Yeshchenko Mykola
                 </p>
                 <p className="Team-main">
-                    Developers, back-end: Artem Layko, Andriy Moroz
+                    Developers, back-end: Artem Layko, Andriy Nahnybida, Andriy Moroz
                 </p>
             </div>
         );

@@ -65,7 +65,7 @@ class Profile extends Component {
         <form>
           {(user.publickey && user.publickey.length > 0) &&
             <FormGroup controlId="pubkey" bsSize="large">
-              <FormLabel>Your publickey</FormLabel>
+              <FormLabel>Your public key</FormLabel>
               <FormControl
                   disabled
                   type="text"
